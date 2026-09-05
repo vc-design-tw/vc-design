@@ -741,9 +741,9 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
   // Fix iframe scroll hijack + click to play
   window.addEventListener('load', () => {
     document.querySelectorAll('.youtube-video iframe').forEach((iframe) => {
-      [iframe.style.pointerEvents = 'none';
+      iframe.style.pointerEvents = 'none';
       iframe.parentElement.addEventListener('click', () => {
-        [iframe.style.pointerEvents = 'auto';
+        iframe.style.pointerEvents = 'auto';
         if (!iframe.src.includes('autoplay=1')) {
           iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
         }

@@ -985,8 +985,8 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
     });
     document.querySelectorAll('.menu-btn_text').forEach(function (el) {
       var t = el.textContent.trim();
-      if (t === 'EN' || t === '\u4e2d') {
-        el.textContent = lang === 'zh' ? 'EN' : '\u4e2d';
+      if (t === 'EN' || t === 'CN') {
+        el.textContent = lang === 'zh' ? 'EN' : 'CN';
       }
     });
     try { localStorage.setItem('vc-lang', lang); } catch (e) {}
@@ -1000,7 +1000,7 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
       var label = btn.querySelector('.menu-btn_text');
       if (!label) return;
       var t = label.textContent.trim();
-      if (t !== 'EN' && t !== '\u4e2d') return;
+      if (t !== 'EN' && t !== 'CN') return;
       btn.addEventListener('click', function (e) {
         e.preventDefault();
         applyLang(currentLang() === 'en' ? 'zh' : 'en');

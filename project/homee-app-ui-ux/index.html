@@ -312,8 +312,15 @@ margin: 0rem !important;
   // Lenis caches the max scroll distance at init; lazy-loaded images
   // further down the page grow the document after that, which left
   // the cached limit stale and capped how far Lenis would let you
-  // scroll. Recompute it whenever the page's height actually changes.
-  new ResizeObserver(() => lenis.resize()).observe(document.body);
+  // scroll. Recompute it whenever the page's height actually changes,
+  // but debounced -- calling lenis.resize() on every single one of a
+  // burst of image-decode layout ticks (many images load in as you
+  // scroll past them) made scrolling past images/video visibly janky.
+  let resizeTimer;
+  new ResizeObserver(() => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => lenis.resize(), 150);
+  }).observe(document.body);
   // Listen for the scroll event and log the event data
   lenis.on('scroll', (e) => {
     console.log(e);

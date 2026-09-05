@@ -51,6 +51,23 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
   }
 
   window.addEventListener('load', initAutoNav);
+
+  (function () {
+    const section = document.querySelector('.section_work_footer_next');
+    const bars = document.querySelectorAll('.next_progress');
+    if (!section || !bars.length) return;
+
+    function update() {
+      const rect = section.getBoundingClientRect();
+      const scrollable = rect.height - window.innerHeight;
+      let progress = scrollable > 0 ? -rect.top / scrollable : (rect.top <= 0 ? 1 : 0);
+      progress = Math.max(0, Math.min(1, progress));
+      const pct = (progress * 100).toFixed(2) + '%';
+      bars.forEach((bar) => { bar.style.width = pct; });
+      requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  })();
 </script></head><body><div class="page-wrapper"><div data-w-id="bad67926-d71c-7f70-edf2-d4c0cb5d894a" class="transition-trigger"></div><div class="global-styles w-embed"><style>
 
 /* Make text look crisper and more legible in all browsers */

@@ -21,6 +21,11 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/project/homee-ai-web-visual/index.html"/>
   </url>
   <url>
+    <loc>https://vc-design-tw.github.io/vc-design/project/homee-casa/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vc-design-tw.github.io/vc-design/project/homee-casa/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/project/homee-casa/index.html"/>
+  </url>
+  <url>
     <loc>https://vc-design-tw.github.io/vc-design/zh/index.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vc-design-tw.github.io/vc-design/index.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/index.html"/>
@@ -39,5 +44,10 @@
     <loc>https://vc-design-tw.github.io/vc-design/zh/project/homee-ai-web-visual/index.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vc-design-tw.github.io/vc-design/project/homee-ai-web-visual/index.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/project/homee-ai-web-visual/index.html"/>
+  </url>
+  <url>
+    <loc>https://vc-design-tw.github.io/vc-design/zh/project/homee-casa/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vc-design-tw.github.io/vc-design/project/homee-casa/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/project/homee-casa/index.html"/>
   </url>
 </urlset>

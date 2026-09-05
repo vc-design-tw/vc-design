@@ -52,7 +52,7 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
 
   window.addEventListener('load', initAutoNav);
 
-  (function () {
+  window.addEventListener('load', function () {
     const section = document.querySelector('.section_work_footer_next');
     const bars = document.querySelectorAll('.next_progress');
     if (!section || !bars.length) return;
@@ -67,7 +67,7 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
       requestAnimationFrame(update);
     }
     requestAnimationFrame(update);
-  })();
+  });
 </script></head><body><div class="page-wrapper"><div data-w-id="bad67926-d71c-7f70-edf2-d4c0cb5d894a" class="transition-trigger"></div><div class="global-styles w-embed"><style>
 
 /* Make text look crisper and more legible in all browsers */

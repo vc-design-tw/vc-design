@@ -64,9 +64,15 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
       progress = Math.max(0, Math.min(1, progress));
       const pct = (progress * 100).toFixed(2) + '%';
       bars.forEach((bar) => { bar.style.width = pct; });
-      requestAnimationFrame(update);
     }
-    requestAnimationFrame(update);
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    (function loop() {
+      update();
+      requestAnimationFrame(loop);
+    })();
   });
 </script></head><body><div data-w-id="06c239e1-5e59-6146-5c06-da66d2ea8f01" class="transition-trigger"></div><div class="cursor-frame"><div class="cursor"><div class="cursor-outside"><div class="cursor-inside"></div></div></div></div><div class="home-work-item_info"><div class="home-work-item_info-cursor"><div class="work-item_cursor"><div class="work-item_text_wrap"><div class="work-item_title">HOMEE</div></div><div class="work-item_text_wrap"><div class="work-item_subtitle heading-style-h4">Smart E-commerce App</div></div></div></div></div><div data-w-id="41b3182d-7500-8d17-7b50-30a504ab870d" class="home-infinite_component w-embed w-script"><style>
   .work-wrap {

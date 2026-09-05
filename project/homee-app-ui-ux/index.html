@@ -64,9 +64,15 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
       progress = Math.max(0, Math.min(1, progress));
       const pct = (progress * 100).toFixed(2) + '%';
       bars.forEach((bar) => { bar.style.width = pct; });
-      requestAnimationFrame(update);
     }
-    requestAnimationFrame(update);
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    (function loop() {
+      update();
+      requestAnimationFrame(loop);
+    })();
   });
 </script></head><body><div class="page-wrapper"><div data-w-id="bad67926-d71c-7f70-edf2-d4c0cb5d894a" class="transition-trigger"></div><div class="global-styles w-embed"><style>
 

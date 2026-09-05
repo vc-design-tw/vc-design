@@ -394,7 +394,7 @@ margin: 0rem !important;
     if ($(this).attr("target") === "_blank") return;
     if (transitionTrigger.length === 0) return;
 
-    const url = new URL(href, window.location.origin);
+    const url = new URL(href, window.location.href);
 
     if (normalizeHost(url.hostname) !== normalizeHost(window.location.hostname)) return;
 

@@ -26,6 +26,11 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/project/homee-casa/index.html"/>
   </url>
   <url>
+    <loc>https://vc-design-tw.github.io/vc-design/project/qoopio-studio-package/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vc-design-tw.github.io/vc-design/project/qoopio-studio-package/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/project/qoopio-studio-package/index.html"/>
+  </url>
+  <url>
     <loc>https://vc-design-tw.github.io/vc-design/zh/index.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vc-design-tw.github.io/vc-design/index.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vc-design-tw.github.io/vc-design/zh/index.html"/>

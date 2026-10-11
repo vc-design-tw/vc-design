@@ -74,7 +74,7 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
       requestAnimationFrame(loop);
     })();
   });
-</script><link rel="alternate" hreflang="en" href="https://vcdesign.tw/project/homee-ai-web-visual/"/><link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/project/homee-ai-web-visual/"/><link rel="alternate" hreflang="x-default" href="https://vcdesign.tw/project/homee-ai-web-visual/"/><style>:where(img[width][height]){height:auto}</style></head><body><div class="page-wrapper"><div data-w-id="0389076a-f734-d683-1c1d-a36038557ef3" class="transition-trigger"></div><div class="global-styles w-embed"><style>
+</script><link rel="alternate" hreflang="en" href="https://vcdesign.tw/project/homee-ai-web-visual/"/><link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/project/homee-ai-web-visual/"/><link rel="alternate" hreflang="x-default" href="https://vcdesign.tw/project/homee-ai-web-visual/"/><style>:where(img[width][height]){height:auto}</style><!--lang-nav--><style>html.lang-switch .nav-component{opacity:1!important;transform:scale(1.2)}</style><script>try{var __t=sessionStorage.getItem("vcLangSwitch");if(__t){sessionStorage.removeItem("vcLangSwitch");if(Date.now()-+__t<15000){document.documentElement.classList.add("lang-switch");window.addEventListener("load",function(){setTimeout(function(){document.documentElement.classList.remove("lang-switch")},2500)})}}}catch(e){}</script></head><body><div class="page-wrapper"><div data-w-id="0389076a-f734-d683-1c1d-a36038557ef3" class="transition-trigger"></div><div class="global-styles w-embed"><style>
 
 /* Make text look crisper and more legible in all browsers */
 body {
@@ -563,7 +563,7 @@ function norm(p){return (p||"/").replace(/index\.html$/,"").replace(/\/+$/,"")||
 function secs(){var h=document.querySelector(".section_hero"),p=h&&h.parentElement;return p?Array.prototype.filter.call(p.children,function(n){return n.tagName!=="SCRIPT"&&n.tagName!=="STYLE"}):[]}
 document.addEventListener("click",function(e){
   var a=e.target.closest&&e.target.closest("a");if(!a)return;
-  var t=a.querySelector(".menu-btn_text"),s=t&&t.textContent.trim();if(s!=="EN"&&s!=="CN")return;
+  var t=a.querySelector(".menu-btn_text"),s=t&&t.textContent.trim();if(s!=="EN"&&s!=="CN")return;try{sessionStorage.setItem("vcLangSwitch",String(Date.now()))}catch(x){}
   var y=window.scrollY;if(y<5)return;
   var c=y+window.innerHeight/2,list=secs(),idx=-1,frac=0,r,top;
   for(var i=0;i<list.length;i++){r=list[i].getBoundingClientRect();top=r.top+y;if(r.height>0&&top<=c&&c<top+r.height){idx=i;frac=(c-top)/r.height}}

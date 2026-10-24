@@ -788,6 +788,17 @@ src="https://cdn.jsdelivr.net/gh/flowtricks/scripts@v1.0.4/dark-mode-toggle.js">
           iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
         }
       });
+      // Once the video is clickable it swallows wheel events, so Lenis keeps
+      // gliding while the browser scrolls natively and the page judders.
+      // While the mouse is over it, hand scrolling to the browser instead.
+      iframe.parentElement.addEventListener('pointerenter', (e) => {
+        if (e.pointerType !== 'mouse' || iframe.style.pointerEvents !== 'auto') return;
+        lenis.options.smoothWheel = false;
+        lenis.scrollTo(lenis.scroll, { immediate: true, force: true });
+      });
+      iframe.parentElement.addEventListener('pointerleave', () => {
+        lenis.options.smoothWheel = true;
+      });
     });
   });
 </script><!-- lottie color -->

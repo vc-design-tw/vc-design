@@ -36,6 +36,11 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/project/xplorer-ui-ux/"/>
   </url>
   <url>
+    <loc>https://vcdesign.tw/project/homee-casa-ui-ux/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vcdesign.tw/project/homee-casa-ui-ux/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/project/homee-casa-ui-ux/"/>
+  </url>
+  <url>
     <loc>https://vcdesign.tw/zh/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vcdesign.tw/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/"/>
@@ -64,5 +69,10 @@
     <loc>https://vcdesign.tw/zh/project/xplorer-ui-ux/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vcdesign.tw/project/xplorer-ui-ux/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/project/xplorer-ui-ux/"/>
+  </url>
+  <url>
+    <loc>https://vcdesign.tw/zh/project/homee-casa-ui-ux/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vcdesign.tw/project/homee-casa-ui-ux/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://vcdesign.tw/zh/project/homee-casa-ui-ux/"/>
   </url>
 </urlset>
